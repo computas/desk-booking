@@ -27,7 +27,19 @@ This is a repo for the backend code.
 git clone https://github.com/computas/desk-booking.git
 ```
 
+Install packages
 
+```
+cd desk-booking
+pip install -r requirements.txt
+```
+
+Start the app
+```
+uvicorn app.main:app --reload
+```
+
+View it on `http://127.0.0.1:8000`
 
 
 ## Deployment :rocket:
