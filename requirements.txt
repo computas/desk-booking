@@ -1,6 +1,6 @@
 # Core
 fastapi
-"uvicorn[standard]"
+uvicorn[standard]
 
 # Testing
 pytest
