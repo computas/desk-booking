@@ -45,17 +45,8 @@ View it on `http://127.0.0.1:8000`
 
 ## Deployment :rocket:
 
-The application is automatically deployed to Google Cloud using a CI/CD pipeline. To deploy the app yourself, follow these steps:
+The application is automatically deployed to Google Cloud (CI/CD pipeline) on every push to the `main` branch.
 
-1. Create a new project on Google Cloud
-
-2. Configure your CI/CD pipeline to build and deploy the application
-
-3. Set up your production environment variables
-
-4. Push your changes to the repository
-
-5. The pipeline will automatically build and deploy your application to Google Cloud
 
 ## Contributing :handshake:
 
