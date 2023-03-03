@@ -44,10 +44,6 @@ The application is automatically deployed to Google Cloud using a CI/CD pipeline
 
 5. The pipeline will automatically build and deploy your application to Google Cloud
 
-## Screenshots :camera:
-
-![Screenshot of Desk Booking App](/screenshots/screenshot.png)
-
 ## Contributing :handshake:
 
 Contributions are always welcome! If you have any ideas or suggestions for the project, please create an issue or submit a pull request.
