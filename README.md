@@ -2,7 +2,7 @@
 
 ![Desk Booking App](https://img.shields.io/badge/Desk%20Booking%20App-v1.0-brightgreen)
 
-Welcome to the Desk Booking App, a web application designed to allow users to easily book desks at work. This app is built using FastAPI for the backend, Next.js for the frontend, and MongoDB for the database. It is deployed using a CI/CD pipeline to Google Cloud.
+Welcome to the amazing Computas Desk Booking App, a web application designed to allow users to easily book desks at work. This app is built using FastAPI for the backend, Next.js for the frontend, and MongoDB for the database. It is deployed using a CI/CD pipeline to Google Cloud.
 
 ## Features :sparkles:
 
