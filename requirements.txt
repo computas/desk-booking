@@ -1,2 +1,7 @@
+# Core
 fastapi
 "uvicorn[standard]"
+
+# Testing
+pytest
+httpx
