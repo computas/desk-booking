@@ -23,27 +23,11 @@ Welcome to the amazing Computas Desk Booking App, a web application designed to 
 
 1. Clone the repository
 ```
-git clone https://github.com/yourusername/desk-booking-app.git
+git clone https://github.com/computas/desk-booking.git
 ```
 
 
-2. Install the required dependencies
 
-```
-cd desk-booking-app
-npm install
-```
-
-
-3. Start the application
-
-```
-npm run dev
-
-```
-
-
-4. Access the application at http://localhost:3000
 
 ## Deployment :rocket:
 
