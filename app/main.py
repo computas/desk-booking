@@ -1,17 +1,17 @@
 from fastapi import FastAPI
 from pymongo import MongoClient
-import os
+from dotenv import dotenv_values
 
-ATLAS_URL = os.environ["ATLAS_URL"]
-DB_NAME = os.environ["DB_NAME"]
+config = dotenv_values(".env")
 
 app = FastAPI()
 
 @app.on_event("startup")
 def startup_db_client():
-    app.mongodb_client = MongoClient(ATLAS_URL)
-    app.database = app.mongodb_client[DB_NAME]
-#helhlealh
+    #helhlealh
+    app.mongodb_client = MongoClient(config["ATLAS_URL"])
+    app.database = app.mongodb_client[config["DB_NAME"]]
+
 @app.on_event("shutdown")
 def shutdown_db_client():
     app.mongodb_client.close()
