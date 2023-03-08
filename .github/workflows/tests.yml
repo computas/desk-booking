@@ -1,5 +1,9 @@
 name: Test PR on main
 
+env:
+  ATLAS_URL: ${{secrets.ATLAS_URL}}
+  DB_NAME: ${{secrets.DB_NAME}}
+  
 on:
   pull_request:
     branches:
