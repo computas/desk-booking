@@ -1,9 +1,9 @@
-name: Test_on_push
+name: Test PR on dev
 
 on:
-  push:
+  pull_request:
     branches:
-      - main 
+      - dev 
 
 jobs:
   test:
