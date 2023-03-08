@@ -1,8 +1,9 @@
-name: Test_on_push
+name: Test on push
 
 env:
   ATLAS_URL: ${{secrets.ATLAS_URL}}
   DB_NAME: ${{secrets.DB_NAME}}
+  
 on:
   push:
     branches:
