@@ -18,7 +18,7 @@ def shutdown_db_client():
 
 @app.get("/")
 def read_root():
-    return {"msg": "Hello World"}
+    return {"msg": "Hello 23World"}
 
 @app.get("/test")
 async def get_sales():
