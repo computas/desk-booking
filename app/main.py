@@ -11,7 +11,7 @@ app = FastAPI()
 def startup_db_client():
     app.mongodb_client = MongoClient(ATLAS_URL)
     app.database = app.mongodb_client[DB_NAME]
-
+#helhlealh
 @app.on_event("shutdown")
 def shutdown_db_client():
     app.mongodb_client.close()
