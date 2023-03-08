@@ -23,7 +23,6 @@ def read_root():
 async def get_sales():
     sales = []
     for sale in app.database["sales"].find({}):
-        print(sale)
+        sales.append(sale["customer"])
     
-    # Return the retrieved documents as a JSON response
     return {"sales": sales}

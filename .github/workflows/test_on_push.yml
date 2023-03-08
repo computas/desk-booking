@@ -1,12 +1,16 @@
-name: Test
+name: Test on push
 
+env:
+  ATLAS_URL: ${{secrets.ATLAS_URL}}
+  DB_NAME: ${{secrets.DB_NAME}}
+  
 on:
   push:
     branches:
       - main 
 
 jobs:
-  test:
+  test-on-push:
     runs-on: ubuntu-latest
 
     steps:

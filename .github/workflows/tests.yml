@@ -1,12 +1,16 @@
-name: Test
+name: Test PR on main
 
+env:
+  ATLAS_URL: ${{secrets.ATLAS_URL}}
+  DB_NAME: ${{secrets.DB_NAME}}
+  
 on:
   pull_request:
     branches:
       - main
 
 jobs:
-  test:
+  test-main-pr:
     runs-on: ubuntu-latest
 
     steps:
