@@ -2,9 +2,12 @@ from datetime import datetime
 from pydantic import BaseModel, Field
 from typing import List, Optional
 import uuid
+from bson import ObjectId
+from utils.helper import generate_object_id
+
 
 class Desk(BaseModel):
-    id: str = Field(default_factory=uuid.uuid4, alias="_id")
+    id: ObjectId = Field(default_factory=generate_object_id, alias="_id")
     name: str = Field(...)
     location: str = Field(...)
     description: Optional[str] = Field(...)
@@ -26,7 +29,7 @@ class Desk(BaseModel):
             }
 
 class DeskUpdate(BaseModel):
-    id: str 
+    id: ObjectId 
     booked_slots: List[datetime]
 
     class Config:
